@@ -4,34 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contagem de Produtos</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js" defer></script>
 </head>
 <body>
   <div class="container">
     <h1>Contagem de Produtos</h1>
-    <table id="tabela">
-      <thead>
-        <tr>
-          <th>Produto</th>
-          <th>Grupo</th>
-          <th>Estoque</th>
-          <th>Bar</th>
-          <th>Avarias</th>
-          <th>Total</th>
-          <th>Ações</th>
-        </tr>
-      </thead>
-      <tbody id="corpo-tabela"></tbody>
-    </table>
-
-    <div class="botoes">
-      <button id="adicionar">+ Adicionar Produto</button>
-      <button id="zerar">Zerar Contagem</button>
-    </div>
+    <button id="addRow">+ Adicionar Produto</button>
+    <button id="resetCounts">Zerar Contagem</button>
+    <div id="tabela"></div>
   </div>
-
-  <script src="firebase.js"></script>
-  <script src="script.js"></script>
 </body>
 </html>
-
