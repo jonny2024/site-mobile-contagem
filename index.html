@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contagem de Produtos</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container">
@@ -18,17 +18,20 @@
           <th>Bar</th>
           <th>Avarias</th>
           <th>Total</th>
-          <th>Excluir</th>
+          <th>Ações</th>
         </tr>
       </thead>
-      <tbody id="corpo-tabela">
-        <!-- Linhas serão adicionadas dinamicamente -->
-      </tbody>
+      <tbody id="corpo-tabela"></tbody>
     </table>
-    <button onclick="adicionarLinha()">Adicionar Produto</button>
-    <button onclick="zerarContagem()">Zerar Contagem</button>
+
+    <div class="botoes">
+      <button id="adicionar">+ Adicionar Produto</button>
+      <button id="zerar">Zerar Contagem</button>
+    </div>
   </div>
 
-  <script type="module" src="script.js"></script>
+  <script src="firebase.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
