@@ -1,80 +1,64 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: url('bg.jpg.jfif') no-repeat center center fixed;
+  padding: 0;
+  background: url('bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #f0f0f0;
-  backdrop-filter: brightness(0.6);
+  font-family: sans-serif;
+  color: white;
 }
 
 .container {
   padding: 20px;
-  background-color: rgba(20, 20, 20, 0.85);
-  max-width: 1000px;
-  margin: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 20px #000;
+  backdrop-filter: blur(8px);
 }
 
 h1 {
   text-align: center;
-  color: #fff;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-th, td {
-  border: 1px solid #444;
-  padding: 10px;
-  text-align: center;
-  background-color: rgba(30, 30, 30, 0.8);
-  color: #fff;
-}
-
-textarea {
-  width: 100%;
-  background: transparent;
-  color: #fff;
-  border: none;
-  resize: vertical;
-  font-size: 14px;
-  padding: 5px;
-  min-height: 40px;
-}
-
-input[type="number"] {
-  width: 70px;
-  background: #111;
-  color: #0f0;
-  border: 1px solid #0f0;
-  text-align: center;
-  padding: 5px;
-  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 button {
-  padding: 12px 20px;
-  margin: 10px 5px;
-  border: none;
-  border-radius: 8px;
-  background: #222;
-  color: #0ff;
+  padding: 10px;
+  margin: 5px;
   font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0 0 10px #0ff50f30;
+  border: none;
+  border-radius: 5px;
+  background-color: #111;
+  color: white;
+  transition: 0.3s ease;
 }
 
 button:hover {
-  background-color: #0ff;
-  color: #000;
+  background-color: #333;
   transform: scale(1.05);
 }
 
-.botoes {
-  text-align: center;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.row input {
+  flex: 1 1 30%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+input.produto, input.grupo {
+  min-width: 120px;
+}
+
+input[type="number"] {
+  width: 80px;
+}
+
+.remove-btn {
+  background-color: crimson;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  border-radius: 4px;
 }
