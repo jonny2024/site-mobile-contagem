@@ -1,5 +1,6 @@
+// firebase-config.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import { getDatabase, ref, set, get, child, onValue } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBMVXlYLkJ7CU-4_k75f8wFzMEzAr4g_2g",
@@ -9,13 +10,10 @@ const firebaseConfig = {
   storageBucket: "contagemdeprodutos-62d48.appspot.com",
   messagingSenderId: "203996681838",
   appId: "1:203996681838:web:c1ef444145e7086998387f",
+  measurementId: "G-6LRFB4V3PF"
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
-window.firebaseDB = db;
-window.firebaseRef = ref;
-window.firebaseSet = set;
-window.firebaseGet = get;
-window.firebaseChild = child;
-window.firebaseApp = app;
+const database = getDatabase(app);
+
+export { database, ref, set, get, child, onValue };
